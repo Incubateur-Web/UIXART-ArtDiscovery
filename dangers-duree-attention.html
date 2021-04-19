@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dangers - Durée d'attention</title>
+    <link rel="shortcut icon" type="image/svg" href="img/eyeArtDiscovery.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Art Discovery" />
+    <meta name="copyright" content="©ArtDiscovery" />
+
+    <!-- FILES -->
+    <link rel="stylesheet" href="style/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- BODY -->
+
+  <body>
+    <div class="mobile-overlay">
+      <span>
+        Les affiches de l'expo sont grandes et belles, c'est pourquoi on vous
+        invite à les savourer devant de grands écrans (ordis, tablettes)
+        enroulés dans un bon plaid avec un bon thé chaud !
+        <br />
+        <br />
+        À bientôt !
+      </span>
+    </div>
+    <!-- Layouts -->
+    <div class="layout-container from-right">
+      <label class="layout a3 first-layout" id="layout1">
+        <img src="img/affiches/dangers/duree-attention/1.webp" alt="" />
+        <input disabled type="checkbox" id="1" checked />
+
+        <label class="layout a4 right-top" id="layout2">
+          <img src="img/affiches/dangers/duree-attention/2.webp" alt="" />
+          <input type="checkbox" id="2" />
+
+          <label
+            class="layout a4 middle-bottom-right final-layout"
+            id="layout3"
+          >
+            <img src="img/affiches/dangers/duree-attention/3.webp" alt="" />
+
+            <div class="link next next-button right yellow rainbow">
+              <div class="button arrow-container-hover">
+                <div class="button-text">Conclusion</div>
+                <div class="arrow"></div>
+              </div>
+
+              <a href="conclusion.html" class="next-link"></a>
+            </div>
+          </label>
+        </label>
+      </label>
+    </div>
+
+    <!-- Next Page layout + animation -->
+    <div class="circle-animation">
+      <label class="layout a3 first-layout" id="layout1">
+        <img src="img/affiches/conclusion/1.webp" alt="" />
+        <input disabled type="checkbox" id="1" checked />
+
+        <label class="layout a4 right-bottom" id="layout2">
+          <img src="img/affiches/conclusion/2.webp" alt="" />
+        </label>
+      </label>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/layoutTravel.js"></script>
+    <script type="text/javascript" src="js/mouseParralax.js"></script>
+    <script type="text/javascript" src="js/simulateClick.js"></script>
+    <script type="text/javascript" src="js/nextCircle.js"></script>
+  </body>
+</html>

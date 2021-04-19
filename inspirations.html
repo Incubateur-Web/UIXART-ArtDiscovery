@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Art Discovery - Inspirations</title>
+    <link rel="shortcut icon" type="image/svg" href="img/eyeArtDiscovery.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Art Discovery" />
+    <meta name="copyright" content="©ArtDiscovery" />
+
+    <!-- FILES -->
+    <link rel="stylesheet" href="style/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- BODY -->
+
+  <body>
+    <div class="mobile-overlay">
+      <span>
+        Les affiches de l'expo sont grandes et belles, c'est pourquoi on vous
+        invite à les savourer devant de grands écrans (ordis, tablettes)
+        enroulés dans un bon plaid avec un bon thé chaud !
+        <br />
+        <br />
+        À bientôt !
+      </span>
+    </div>
+    <div class="body-container">
+      <div class="nav-item us">
+        <a href="">nous ?</a>
+      </div>
+      <div class="nav-item inspiration">
+        <a href="">inspirations</a>
+      </div>
+
+      <div class="logo">
+        <div class="logo-inner">
+          <div
+            class="eye"
+            data-tilt
+            data-tilt-full-page-listening
+            data-tilt-reverse="true"
+          >
+            <img src="img/eyeArtDiscovery.svg" alt="" />
+          </div>
+          <img src="img/textArtDiscovery.svg" alt="" />
+        </div>
+      </div>
+
+      <a href="processus-de-creation.html" class="go-to-expo-container">
+        <div class="go-to-expo">
+          l'expo
+          <div class="arrow" style="margin-left: 20px"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="back inspirations"><div class="text">inspirations</div></div>
+
+    <div class="navigation">
+      <div class="go-back arrow-container-hover" onclick="goBack()">
+        <div
+          class="arrow to-left white"
+          style="transform: rotate(180deg) scale(0.6)"
+        ></div>
+        accueil
+      </div>
+      <div>
+        <span onclick="jump(this)" class="toVideos" id="toVideos">vidéos</span>
+        <span onclick="jump(this)" id="toGames">jeux</span>
+      </div>
+    </div>
+
+    <div class="inspirations-us-container" id="inspirations-container">
+      <section class="inspirations-section videos">
+        <div class="videos-container">
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/NUMa0QkPzns"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/yY96hTb8WgI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/DYaq2sWTWAA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/uaaC57tcci0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/kxkrdLI6e6M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/dpXBV3COwJM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="inspirations-section games">
+        <ul class="links-list">
+          <li>
+            <a class="shake" href="https://cantunsee.space" target="_blank">
+              Test ton niveau d'UX/UI — cantunsee
+            </a>
+          </li>
+          <li>
+            <a class="shake" href="https://userinyerface.com/" target="_blank">
+              De la bonne UX — UserInyerface
+            </a>
+          </li>
+          <li><a class="shake" href="">Lien trop stylé</a></li>
+          <li><a class="shake" href="">L'UX ? J'adore !</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <script>
+      const container = document.getElementById('inspirations-container')
+      const navContainer = document.getElementsByClassName('navigation')
+
+      function goBack() {
+        window.history.back()
+      }
+
+      function jump(target) {
+        console.log('click', target)
+        if (target.id === 'toGames') {
+          console.log('to Games')
+          container.scrollTo(0, document.body.scrollHeight)
+        } else if (target.id === 'toVideos') {
+          console.log('to Videos')
+          container.scrollTo(0, 0)
+        }
+      }
+
+      var direction = 'toBottom'
+      var lastScrollTop = 0
+      container.addEventListener(
+        'scroll',
+        function () {
+          var st = window.pageYOffset || container.scrollTop
+          if (st > lastScrollTop) {
+            direction = 'toBottom'
+          } else {
+            direction = 'toTop'
+          }
+          lastScrollTop = st <= 0 ? 0 : st
+
+          if (
+            container.scrollTop > container.scrollHeight / 4 - 100 &&
+            container.scrollTop < container.scrollHeight / 4 + 100
+          ) {
+            if (direction === 'toBottom') {
+              navContainer[0].classList.add('toGames')
+            }
+            if (direction === 'toTop') {
+              navContainer[0].classList.remove('toGames')
+            }
+          }
+        },
+        false
+      )
+    </script>
+  </body>
+</html>

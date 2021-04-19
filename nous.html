@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Art Discovery - Nous ?</title>
+    <link rel="shortcut icon" type="image/svg" href="img/eyeArtDiscovery.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Art Discovery" />
+    <meta name="copyright" content="©ArtDiscovery" />
+
+    <!-- FILES -->
+    <link rel="stylesheet" href="style/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- BODY -->
+
+  <body>
+    <div class="mobile-overlay">
+      <span>
+        Les affiches de l'expo sont grandes et belles, c'est pourquoi on vous
+        invite à les savourer devant de grands écrans (ordis, tablettes)
+        enroulés dans un bon plaid avec un bon thé chaud !
+        <br />
+        <br />
+        À bientôt !
+      </span>
+    </div>
+    <div class="body-container">
+      <div class="nav-item us">
+        <a href="">nous ?</a>
+      </div>
+      <div class="nav-item inspiration">
+        <a href="">inspirations</a>
+      </div>
+
+      <div class="logo">
+        <div class="logo-inner">
+          <div
+            class="eye"
+            data-tilt
+            data-tilt-full-page-listening
+            data-tilt-reverse="true"
+          >
+            <img src="img/eyeArtDiscovery.svg" alt="" />
+          </div>
+          <img src="img/textArtDiscovery.svg" alt="" />
+        </div>
+      </div>
+
+      <a href="processus-de-creation.html" class="go-to-expo-container">
+        <div class="go-to-expo">
+          l'expo
+          <div class="arrow" style="margin-left: 20px"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="back us"><div class="text">nous ?</div></div>
+
+    <div class="navigation">
+      <div class="go-back arrow-container-hover" onclick="goBack()">
+        <div
+          class="arrow to-left white"
+          style="transform: rotate(180deg) scale(0.6)"
+        ></div>
+        accueil
+      </div>
+      <div>
+        <span onclick="jump(this)" class="toVideos" id="toVideos">sujet</span>
+        <span onclick="jump(this)" id="toGames">équipe</span>
+      </div>
+    </div>
+
+    <div class="inspirations-us-container" id="us-container">
+      <section class="us-section presentation">
+        <div class="presentation-container">
+          <p>
+            <strong>Art Discovery</strong> c’est une
+            <strong>exposition interactive</strong> sur le thème du design, et
+            plus particulièrement de l’<strong>UX/UI</strong>. Si tu ne connais
+            pas ce sujet, on t’invite grandement à
+            <a href="processus-de-creation.html" class="shake"
+              >tester notre expo !</a
+            >
+            <br />
+            L’objectif pour nous, c’est de te faire <strong>découvrir</strong>,
+            mais surtout de te faire <strong>comprendre</strong> les enjeux
+            autour du sujet qu’est l’UX/UI. Et pour rendre l’apprentissage un
+            peu plus <strong>ludique</strong> et offrir une expérience
+            utilisateur agréable, nous avons confectionné certaines de nos
+            infographies de manière <strong>interactive</strong>.
+          </p>
+          <p>
+            Ces dernières années, on parle de plus en plus de l’UX/UI. On a donc
+            pensé qu’il serait intéressant de déployer l’exposition au sein de
+            l’école, vu que chacune de nos formations sont liées, de près ou de
+            loin, au monde du web ou du design. Comme ça, tu pourras avoir
+            quelques connaissances sur le sujet.
+          </p>
+          <p>
+            Et du coup, pour s’adapter un peu à la situation sanitaire actuelle,
+            nous avons transformé notre exposition physique en
+            <strong>exposition virtuelle</strong>, présentée sous la forme d’un
+            site web, développé par
+            <a
+              class="shake"
+              href="https://kaelgh.com"
+              target="_blank"
+              style="color: whitesmoke"
+              title="kaelgh.com"
+              >Kaël</a
+            >. Dès lors, toute notre exposition est visible et consultable en
+            ligne !
+          </p>
+          <p>Descends pour découvrir notre équipe :)</p>
+        </div>
+      </section>
+      <section class="us-section team">
+        <div class="team-container">
+          <div class="members-group">
+            <div class="member top">
+              <img
+                src="img/members/busra.webp"
+                alt=""
+                data-tilt
+                data-tilt-reverse="true"
+              />
+              <span>Busra Duman</span>
+              <span class="desc">M2 DA, chef de projet</span>
+              <p>
+                Busra est la Cheffe de Projet. C’est elle qui pilote et encadre
+                l’ensemble du projet. Bienveillante et force de proposition,
+                elle est très impliquée dans son projet et déterminée à vous
+                offrir la meilleure expérience possible.
+              </p>
+            </div>
+            <div class="member">
+              <img
+                src="img/members/tess.webp"
+                alt=""
+                data-tilt
+                data-tilt-reverse="true"
+              />
+              <span>Tess Dutronc</span>
+              <span class="desc">M1 Marketing et Com'</span>
+              <p>
+                Tess clôture l’équipe et fait également partie du pôle
+                marketing. Elle est très appliquée dans ce qu’elle entreprend et
+                est une grande force de proposition. Sa bonne humeur est
+                contagieuse !
+              </p>
+            </div>
+            <div class="member top">
+              <img
+                src="img/members/louanne.webp"
+                alt=""
+                data-tilt
+                data-tilt-reverse="true"
+              />
+              <span>Louanne Bonnefoy</span>
+              <span class="desc">B3 Créa Design</span>
+              <p>
+                C’est avec beaucoup de fraîcheur et de légèreté que Louanne
+                apporte sa touche personnelle à l’identité du groupe. Elle est
+                curieuse et créative, tout ce dont Art Discovery a besoin.
+              </p>
+            </div>
+          </div>
+          <div class="members-group">
+            <div class="member">
+              <img
+                src="img/members/julie.webp"
+                alt=""
+                data-tilt
+                data-tilt-reverse="true"
+              />
+              <span>Julie Girard</span>
+              <span class="desc">M1 DA</span>
+              <p>
+                Véritable âme d’artiste, Julie est la force tranquille du
+                groupe. Son goût du détail ainsi que sa créativité collent
+                parfaitement à l’ADN d’Art Discovery.
+              </p>
+            </div>
+            <div class="member top">
+              <img
+                src="img/members/estelle.webp"
+                alt=""
+                data-tilt
+                data-tilt-reverse="true"
+              />
+              <span>Estelle Faralli</span>
+              <span class="desc"
+                >M2 Entrepreneuriat <br />
+                Start-Up & Innovation</span
+              >
+              <p>
+                Estelle est une stratège. Elle fait partie du pôle marketing et
+                est déterminée à concevoir un contenu de qualité. Véritable œil
+                de lynx, elle est minutieuse et a le sens du détail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="js/tilt.min.js"></script>
+    <script>
+      const container = document.getElementById('us-container')
+      const navContainer = document.getElementsByClassName('navigation')
+
+      function goBack() {
+        window.history.back()
+      }
+
+      function jump(target) {
+        console.log('click', target)
+        if (target.id === 'toGames') {
+          console.log('to Games')
+          container.scrollTo(0, document.body.scrollHeight)
+        } else if (target.id === 'toVideos') {
+          console.log('to Videos')
+          container.scrollTo(0, 0)
+        }
+      }
+
+      var direction = 'toBottom'
+      var lastScrollTop = 0
+      container.addEventListener(
+        'scroll',
+        function () {
+          var st = window.pageYOffset || container.scrollTop
+          if (st > lastScrollTop) {
+            direction = 'toBottom'
+          } else {
+            direction = 'toTop'
+          }
+          lastScrollTop = st <= 0 ? 0 : st
+
+          if (
+            container.scrollTop > container.scrollHeight / 4 - 100 &&
+            container.scrollTop < container.scrollHeight / 4 + 100
+          ) {
+            if (direction === 'toBottom') {
+              navContainer[0].classList.add('toTeam')
+            }
+            if (direction === 'toTop') {
+              navContainer[0].classList.remove('toTeam')
+            }
+          }
+        },
+        false
+      )
+    </script>
+  </body>
+</html>

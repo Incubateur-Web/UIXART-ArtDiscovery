@@ -26,9 +26,9 @@
   <body>
     <div class="mobile-overlay">
       <span>
-        Les affiches de l'expo sont grandes et belles, c'est pourquoi on vous
-        invite à les savourer devant de grands écrans (ordis, tablettes)
-        enroulés dans un bon plaid avec un bon thé chaud !
+        Les affiches de l'exposition étant trop grandes pour les mobiles, nous
+        vous invitons à la découvrir sur grand écran (ordis, tablettes) enroulé
+        dans un bon plaid, avec un bon thé !
         <br />
         <br />
         À bientôt !
@@ -39,8 +39,19 @@
       <div class="layout-container">
         <label class="layout a3 first-layout" id="layout1">
           <img src="img/affiches/histoire/1.webp" alt="" />
-          <input disabled type="checkbox" id="1" checked />
+          <div class="overlay-instructions">
+            <div class="text">
+              Pour continuer la visite, clique sur l'affiche la plus proche
+              <br />
+              <img
+                src="img/arrows/arrow.svg"
+                alt=""
+                style="pointer-events: none"
+              />
+            </div>
+          </div>
 
+          <input disabled type="checkbox" id="1" checked />
           <label class="layout a4 right-top layout-to-cards" id="layout2">
             <img src="img/affiches/histoire/2.webp" alt="" />
 
@@ -227,6 +238,9 @@
       // Variables
       const layoutToCards = document.querySelector('.layout-to-cards')
       const buttonToCards = document.querySelector('.button-to-cards')
+      const overlayInstructions = document.querySelector(
+        '.overlay-instructions'
+      )
 
       // Fonctions
       function pageScrollCards(event, layout) {
@@ -238,10 +252,15 @@
         })
       }
 
+      setTimeout(function () {
+        overlayInstructions.classList.add('active')
+      }, 3000)
+
       // Events Listener
-      layoutToCards.addEventListener('click', (e) =>
+      layoutToCards.addEventListener('click', (e) => {
         buttonToCards.classList.add('active')
-      )
+        overlayInstructions.classList.remove('active')
+      })
       buttonToCards.addEventListener('click', (e) =>
         pageScrollCards(e, cardsContainer)
       )

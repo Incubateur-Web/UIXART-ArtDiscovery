@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <!-- BODY -->
@@ -22,9 +26,9 @@
   <body>
     <div class="mobile-overlay">
       <span>
-        Les affiches de l'expo sont grandes et belles, c'est pourquoi on vous
-        invite à les savourer devant de grands écrans (ordis, tablettes)
-        enroulés dans un bon plaid avec un bon thé chaud !
+        Les affiches de l'exposition étant trop grandes pour les mobiles, nous
+        vous invitons à la découvrir sur grand écran (ordis, tablettes) enroulé
+        dans un bon plaid, avec un bon thé !
         <br />
         <br />
         À bientôt !
@@ -36,20 +40,42 @@
         <img src="img/affiches/conclusion/1.webp" alt="" />
         <input disabled type="checkbox" id="1" checked />
 
-        <label class="layout a4 right-bottom final-layout" id="layout2">
+        <label class="layout a4 right-bottom" id="layout2">
           <img src="img/affiches/conclusion/2.webp" alt="" />
+          <input type="checkbox" id="2" />
 
-          <div class="link next next-button right yellow">
-            <div
-              class="button arrow-container-hover"
-              style="padding-top: 250px"
-            >
-              <div class="button-text">Revenir à l'accueil</div>
-              <div class="arrow"></div>
+          <label class="layout a4 bottom-left final-layout" id="layout3">
+            <img src="img/affiches/conclusion/3.webp" alt="" />
+
+            <div class="form-feedback">
+              <form class="form komento-form">
+                <input
+                  name="author"
+                  type="text"
+                  id="author"
+                  placeholder="Ton petit nom"
+                />
+                <textarea
+                  name="comment"
+                  id="comment"
+                  rows="6"
+                  placeholder="Alors, un avis ?"
+                ></textarea>
+                <button type="submit" class="link arrow-container-hover">
+                  <div class="arrow"></div>
+                </button>
+              </form>
             </div>
 
-            <a href="index.html" class="next-link"></a>
-          </div>
+            <div class="link next next-button bottom yellow">
+              <div class="button arrow-container-hover">
+                <div class="button-text">Revenir à l'accueil</div>
+                <div class="arrow"></div>
+              </div>
+
+              <a href="index.html" class="next-link"></a>
+            </div>
+          </label>
         </label>
       </label>
     </div>
@@ -62,5 +88,6 @@
     <script type="text/javascript" src="js/mouseParralax.js"></script>
     <script type="text/javascript" src="js/simulateClick.js"></script>
     <script type="text/javascript" src="js/nextCircle.js"></script>
+    <script type="text/javascript" src="js/komento.js"></script>
   </body>
 </html>

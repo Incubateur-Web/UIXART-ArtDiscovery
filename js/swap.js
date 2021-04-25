@@ -3,9 +3,18 @@ const nextButton = document.querySelector('.next')
 const finalLayoutSwap = document.querySelector('.final-layout-swap')
 const layout = document.querySelector('.layout-container')
 const congrats = ['empathie', 'definition', 'ideation', 'modelisation', 'test']
+const helpMe = document.querySelector('.swap-help')
+
+// Haha tu as cassé le jeu, petit développeur ! 😉
+
+let tryHard = 0
 
 // Functions
 function getElementsOrder() {
+  tryHard = tryHard + 1
+  if (tryHard === 6) {
+    helpMe.classList.add('please-help')
+  }
   setTimeout(function () {
     var element = document.getElementsByClassName('element')
     let elementsTable = []

@@ -17,5 +17,5 @@ function goToNext(delay) {
 }
 
 // Events Listener
-nextButton.addEventListener('click', () => goToNext(700))
+nextButton.addEventListener('click', () => goToNext(1000))
 finalLayout.addEventListener('click', () => nextButton.classList.add('active'))
